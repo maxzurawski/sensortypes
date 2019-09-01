@@ -19,7 +19,9 @@ var Mgr DBManager
 
 type DBManager interface {
 	Save(sensorTypeDTO dto.SensorTypeDTO) (*model.SensorType, error)
-	//Update(sensorTypeDTO dto.SensorTypeDTO) (*model.SensorType, error)
+	Update(sensorTypeDTO dto.SensorTypeDTO) (*model.SensorType, error)
+	GetById(id uint) (*model.SensorType, error)
+	GetByType(input string) (*model.SensorType, error)
 	//Delete(id uint) (bool, error)
 	//GetAll() ([]model.SensorType, error)
 	//GetById(id uint) (*model.SensorType, error)

@@ -22,9 +22,7 @@ func (mgr *manager) Save(sensorTypeDTO dto.SensorTypeDTO) (*model.SensorType, er
 	}
 
 	// check if type is not already registered
-	tempSensor := &model.SensorType{}
-	err := mgr.db.Unscoped().Where("type = ?", sensorTypeDTO.Type).Find(tempSensor).Error
-
+	tempSensor, err := mgr.GetByType(sensorTypeDTO.Type)
 	if err != nil && err.Error() != "record not found" {
 		return nil, err
 	}
