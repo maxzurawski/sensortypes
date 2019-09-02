@@ -71,9 +71,10 @@ func prepareSensorTypes() []uint {
 	var ids []uint
 
 	typeDTO := dto.SensorTypeDTO{
-		Type:  "TEMPERATURE",
-		Name:  "temperature",
-		Topic: "temperature_topic",
+		Type:        "TEMPERATURE",
+		Name:        "temperature",
+		Topic:       "temperature_topic",
+		Description: "Simple temperature sensor type",
 	}
 
 	sensorType, _ := Mgr.Save(typeDTO)
