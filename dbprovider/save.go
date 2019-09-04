@@ -32,7 +32,7 @@ func (mgr *manager) Save(sensorTypeDTO dto.SensorTypeDTO) (*model.SensorType, er
 	}
 
 	// convert dto -> entity (dto -> model)
-	entity := convertToEntity(sensorTypeDTO)
+	entity := mgr.ConvertToEntity(sensorTypeDTO)
 
 	// save our object
 	err = mgr.db.Save(entity).Error

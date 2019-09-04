@@ -38,20 +38,15 @@ func (mgr *manager) Update(sensorTypeDTO dto.SensorTypeDTO) (*model.SensorType, 
 			*inputType.Type, sensorTypeDTO.Type, sensorTypeDTO.Type))
 	}
 
-	// dto.version != entity.version -> then error
-
-	if err != nil && err.Error() != "record not found" {
-		return nil, err
-	}
-
-	// entity.version + 1
 	version := *output.Version
 	if version != sensorTypeDTO.Version {
 		return nil, errors.New("entity versions differs from given input. Please update your state of sensortype and try again")
 	}
 
-	// entity.modifiedAt = currentDate
+	// entity.version + 1
 	version = version + 1
+
+	// entity.modifiedAt = currentDate
 	now := time.Now()
 
 	// save entity

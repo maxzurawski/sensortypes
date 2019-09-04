@@ -2,7 +2,6 @@ package dbprovider
 
 import (
 	"fmt"
-	"time"
 
 	"github.com/labstack/gommon/log"
 
@@ -22,6 +21,8 @@ type DBManager interface {
 	Update(sensorTypeDTO dto.SensorTypeDTO) (*model.SensorType, error)
 	GetById(id uint) (*model.SensorType, error)
 	GetByType(input string) (*model.SensorType, error)
+	ConvertToEntity(input dto.SensorTypeDTO) *model.SensorType
+	ConvertFromEntity(input *model.SensorType) dto.SensorTypeDTO
 	//Delete(id uint) (bool, error)
 	//GetAll() ([]model.SensorType, error)
 	//GetById(id uint) (*model.SensorType, error)
@@ -30,19 +31,6 @@ type DBManager interface {
 
 type manager struct {
 	db *gorm.DB
-}
-
-func convertToEntity(input dto.SensorTypeDTO) *model.SensorType {
-	now := time.Now()
-	entity := &model.SensorType{
-		Version:     &input.Version,
-		Topic:       &input.Topic,
-		Name:        &input.Name,
-		Type:        &input.Type,
-		Description: &input.Description,
-		CreatedAt:   &now,
-	}
-	return entity
 }
 
 func InitDbManager() {
