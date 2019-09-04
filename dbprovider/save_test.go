@@ -2,7 +2,6 @@ package dbprovider
 
 import (
 	"fmt"
-	"os"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -18,11 +17,7 @@ type SaveSuiteTest struct {
 }
 
 func (s *SaveSuiteTest) SetupTest() {
-	_ = os.Setenv("SERVICE_NAME", "sensortypes")
-	_ = os.Setenv("HTTP_PORT", "8101")
-	_ = os.Setenv("EUREKA_SERVICE", "http://xdevicesdev.home:8761")
-	_ = os.Setenv("DB_PATH", "/Users/l0cke/.databases/xdevices/test/sensortypes.db")
-	InitDbManager()
+	environmentPreparations()
 }
 
 func (s *SaveSuiteTest) TestSave_Success() {

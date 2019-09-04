@@ -1,7 +1,6 @@
 package dbprovider
 
 import (
-	"os"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -22,11 +21,7 @@ func TestDeleteSuiteTest(t *testing.T) {
 
 // setup environment
 func (d *DeleteSuiteTest) SetupTest() {
-	_ = os.Setenv("SERVICE_NAME", "sensortypes")
-	_ = os.Setenv("HTTP_PORT", "8101")
-	_ = os.Setenv("EUREKA_SERVICE", "http://xdevicesdev.home:8761")
-	_ = os.Setenv("DB_PATH", "/Users/l0cke/.databases/xdevices/test/sensortypes.db")
-	InitDbManager()
+	environmentPreparations()
 }
 
 // failure check -> try to delete not existing sensor type

@@ -1,7 +1,6 @@
 package dbprovider
 
 import (
-	"os"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -19,12 +18,8 @@ func TestGetByIdSuiteTest(t *testing.T) {
 	suite.Run(t, new(GetByIdTestSuite))
 }
 
-func (s *GetByIdTestSuite) SetupTest() {
-	_ = os.Setenv("SERVICE_NAME", "sensortypes")
-	_ = os.Setenv("HTTP_PORT", "8101")
-	_ = os.Setenv("EUREKA_SERVICE", "http://xdevicesdev.home:8761")
-	_ = os.Setenv("DB_PATH", "/Users/l0cke/.databases/xdevices/test/sensortypes.db")
-	InitDbManager()
+func (g *GetByIdTestSuite) SetupTest() {
+	environmentPreparations()
 }
 
 // test get by id with success
