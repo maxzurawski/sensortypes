@@ -24,8 +24,7 @@ type DBManager interface {
 	ConvertToEntity(input dto.SensorTypeDTO) *model.SensorType
 	ConvertFromEntity(input *model.SensorType) dto.SensorTypeDTO
 	Delete(id uint) (bool, error)
-	//GetAll() ([]model.SensorType, error)
-	//GetById(id uint) (*model.SensorType, error)
+	GetAll() ([]model.SensorType, error)
 	GetDb() *gorm.DB
 }
 

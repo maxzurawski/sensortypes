@@ -63,7 +63,7 @@ func (g *GetByIdTestSuite) TestGetById_Failure() {
 
 	assert.NotNil(g.T(), err)
 	assert.Nil(g.T(), result)
-	assert.Equal(g.T(), "sensortype not found. Nothing to update", err.Error())
+	assert.Equal(g.T(), "sensortype not found", err.Error())
 }
 
 func prepareSensorTypes() []uint {

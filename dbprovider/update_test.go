@@ -92,7 +92,7 @@ func (u *UpdateSuiteTest) TestUpdate_SensorType_Not_Exist_Failure() {
 
 	assert.Nil(u.T(), result)
 	assert.NotNil(u.T(), err)
-	assert.Equal(u.T(), "sensortype not found. Nothing to update", err.Error())
+	assert.Equal(u.T(), "sensortype not found", err.Error())
 }
 
 // failure test -> check if renaming of type is possible, when type of rename is existing
