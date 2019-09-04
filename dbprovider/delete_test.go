@@ -21,7 +21,7 @@ func TestDeleteSuiteTest(t *testing.T) {
 
 // setup environment
 func (d *DeleteSuiteTest) SetupTest() {
-	environmentPreparations()
+	EnvironmentPreparations()
 }
 
 // failure check -> try to delete not existing sensor type

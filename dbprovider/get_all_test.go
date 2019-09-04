@@ -21,7 +21,7 @@ func TestGetAllSuteTest(t *testing.T) {
 
 // setup func
 func (g *GetAllSuiteTest) SetupTest() {
-	environmentPreparations()
+	EnvironmentPreparations()
 }
 
 // failure check -> no sensortypes are present

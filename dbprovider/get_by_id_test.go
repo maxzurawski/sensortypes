@@ -19,7 +19,7 @@ func TestGetByIdSuiteTest(t *testing.T) {
 }
 
 func (g *GetByIdTestSuite) SetupTest() {
-	environmentPreparations()
+	EnvironmentPreparations()
 }
 
 // test get by id with success

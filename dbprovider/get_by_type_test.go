@@ -21,7 +21,7 @@ func TestGetByTypeSuiteTest(t *testing.T) {
 
 // func to setup tests
 func (g *GetByTypeSuiteTest) SetupTest() {
-	environmentPreparations()
+	EnvironmentPreparations()
 }
 
 // unit test for success

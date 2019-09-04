@@ -17,7 +17,7 @@ type SaveSuiteTest struct {
 }
 
 func (s *SaveSuiteTest) SetupTest() {
-	environmentPreparations()
+	EnvironmentPreparations()
 }
 
 func (s *SaveSuiteTest) TestSave_Success() {

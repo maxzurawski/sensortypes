@@ -21,7 +21,7 @@ func TestUpdateSuiteTest(t *testing.T) {
 
 // setup function
 func (u *UpdateSuiteTest) SetupTest() {
-	environmentPreparations()
+	EnvironmentPreparations()
 }
 
 // failure test -> check if ID is not 0
