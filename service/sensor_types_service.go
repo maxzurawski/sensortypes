@@ -11,7 +11,7 @@ type SensorTypesService interface {
 	GetByType(input string) (*dto.SensorTypeDTO, error)
 	Save(input dto.SensorTypeDTO) (*dto.SensorTypeDTO, error)
 	Update(input dto.SensorTypeDTO) (*dto.SensorTypeDTO, error)
-	// Delete
+	Delete(id uint) (bool, error)
 }
 
 var Service SensorTypesService
