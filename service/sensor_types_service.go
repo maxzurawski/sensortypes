@@ -8,7 +8,7 @@ import (
 type SensorTypesService interface {
 	GetAll() ([]dto.SensorTypeDTO, error)
 	GetById(id uint) (*dto.SensorTypeDTO, error)
-	// GetByType
+	GetByType(input string) (*dto.SensorTypeDTO, error)
 	// Save
 	// Update
 	// Delete
