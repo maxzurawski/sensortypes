@@ -22,7 +22,7 @@ func TestGetByIdSuiteTest(t *testing.T) {
 
 // setup test
 func (g *GetByIdSuiteTest) SetupTest() {
-	environmentPreparations()
+	ServiceEnvironmentPreparations()
 }
 
 // failure check

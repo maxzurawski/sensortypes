@@ -2,7 +2,7 @@ package service
 
 import "github.com/xdevices/sensortypes/dbprovider"
 
-func environmentPreparations() {
+func ServiceEnvironmentPreparations() {
 	dbprovider.EnvironmentPreparations()
 	Init()
 }

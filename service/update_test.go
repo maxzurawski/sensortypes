@@ -22,7 +22,7 @@ func TestUpdateSuite(t *testing.T) {
 
 // provide setup test function
 func (us *UpdateSuite) SetupTest() {
-	environmentPreparations()
+	ServiceEnvironmentPreparations()
 }
 
 // failure check -> version is different then version stored in database

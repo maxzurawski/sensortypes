@@ -22,7 +22,7 @@ func TestDeleteSuite(t *testing.T) {
 
 // setup test function
 func (ds *DeleteSuite) SetupTest() {
-	environmentPreparations()
+	ServiceEnvironmentPreparations()
 }
 
 // failure delete -> try to delete sensor type with ID 999

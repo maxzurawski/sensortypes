@@ -22,7 +22,7 @@ func TestSuiteGetByType(t *testing.T) {
 
 // setup tests
 func (g *SuiteGetByType) SetupTest() {
-	environmentPreparations()
+	ServiceEnvironmentPreparations()
 }
 
 // failure test

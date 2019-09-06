@@ -23,7 +23,7 @@ func TestServiceGetAllSuiteTest(t *testing.T) {
 
 // setup func
 func (s *ServiceGetAllSuiteTest) SetupTest() {
-	environmentPreparations() // DRY - DON't REPEAT YOURSELF
+	ServiceEnvironmentPreparations() // DRY - DON't REPEAT YOURSELF
 }
 
 // failure test

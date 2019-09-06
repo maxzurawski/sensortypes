@@ -23,7 +23,7 @@ func TestSaveSuite(t *testing.T) {
 
 // setup tests
 func (ss *SaveSuite) SetupTest() {
-	environmentPreparations()
+	ServiceEnvironmentPreparations()
 }
 
 // failure check -> input.ID is 9
