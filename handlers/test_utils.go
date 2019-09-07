@@ -23,3 +23,14 @@ func prepareSensorTypes() {
 	_, _ = dbprovider.Mgr.Save(sensorType)
 
 }
+
+func prepareSensorTypeWithId() uint {
+
+	sensorType := dto.SensorTypeDTO{
+		Name:  "Dummy Sensor A",
+		Type:  "DUMMY_A",
+		Topic: "DUMMY_A_TOPIC",
+	}
+	entity, _ := dbprovider.Mgr.Save(sensorType)
+	return *entity.ID
+}
