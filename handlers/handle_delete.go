@@ -17,7 +17,7 @@ func HandleDelete(c echo.Context) error {
 	}
 	result, err := service.Service.Delete(uint(id))
 	if err != nil {
-		return c.JSON(http.StatusInternalServerError, echo.NewHTTPError(http.StatusInternalServerError, err.Error()))
+		return c.JSON(http.StatusBadRequest, echo.NewHTTPError(http.StatusBadRequest, err.Error()))
 	}
 	return c.JSON(http.StatusOK, result)
 }
