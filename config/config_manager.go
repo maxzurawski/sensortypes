@@ -5,11 +5,13 @@ import (
 	"os"
 
 	"github.com/xdevices/utilities/config"
+	"github.com/xdevices/utilities/rabbit"
 )
 
 type sensorTypesConfig struct {
 	config.Manager
 	dbPath string
+	rabbit.RabbitMQManager
 }
 
 var instance *sensorTypesConfig
@@ -28,6 +30,10 @@ func (c *sensorTypesConfig) sensorTypesConfigInit() {
 		panic(fmt.Sprintf("set DB_PATH and try again"))
 	} else {
 		c.dbPath = dbPath
+	}
+
+	if c.ConnectToRabbit() {
+		c.RabbitMQManager.InitConnection(c.RabbitURL())
 	}
 }
 
