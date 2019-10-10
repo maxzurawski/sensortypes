@@ -5,6 +5,7 @@ import (
 	"github.com/xdevices/sensortypes/config"
 	"github.com/xdevices/sensortypes/dbprovider"
 	"github.com/xdevices/sensortypes/handlers"
+	"github.com/xdevices/sensortypes/publishers"
 	"github.com/xdevices/sensortypes/service"
 )
 
@@ -24,4 +25,6 @@ func init() {
 	manager := config.EurekaManagerInit()
 	manager.SendRegistrationOrFail()
 	manager.ScheduleHeartBeat(config.Config().ServiceName(), 10)
+
+	publishers.Init()
 }
