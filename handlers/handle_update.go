@@ -5,6 +5,8 @@ import (
 	"net/http"
 	"strconv"
 
+	"github.com/xdevices/sensortypes/publishers"
+
 	"github.com/xdevices/sensortypes/service"
 
 	"github.com/xdevices/sensortypes/dto"
@@ -29,10 +31,12 @@ func HandleUpdate(c echo.Context) error {
 		return c.JSON(http.StatusConflict, echo.NewHTTPError(http.StatusConflict, fmt.Sprintf("given sensortype cannot be updated under id: %d", id)))
 	}
 
+	oldType, _ := service.Service.GetByType(sensorTypeDTO.Type)
 	resultDTO, err := service.Service.Update(sensorTypeDTO)
 	if err != nil {
 		return c.JSON(http.StatusBadRequest, echo.NewHTTPError(http.StatusBadRequest, err.Error()))
 	}
+	publishers.TypesConfigChangePublisher().PublishUpdateChange(oldType, resultDTO)
 
 	return c.JSON(http.StatusAccepted, resultDTO)
 }

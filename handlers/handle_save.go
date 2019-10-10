@@ -3,6 +3,8 @@ package handlers
 import (
 	"net/http"
 
+	"github.com/xdevices/sensortypes/publishers"
+
 	"github.com/xdevices/sensortypes/service"
 
 	"github.com/labstack/echo"
@@ -18,6 +20,7 @@ func HandleSave(c echo.Context) error {
 	if err != nil {
 		return c.JSON(http.StatusBadRequest, echo.NewHTTPError(http.StatusBadRequest, err.Error()))
 	}
+	publishers.TypesConfigChangePublisher().PublishSaveChange("", afterSaveDTO)
 
 	return c.JSON(http.StatusCreated, afterSaveDTO)
 }
