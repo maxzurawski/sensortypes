@@ -12,6 +12,9 @@ type SensorTypesService interface {
 	Save(input dto.SensorTypeDTO) (*dto.SensorTypeDTO, error)
 	Update(input dto.SensorTypeDTO) (*dto.SensorTypeDTO, error)
 	Delete(id uint) (bool, error)
+
+	// cache
+	GetCachedSensorTypes() ([]dto.CachedTypeDTO, error)
 }
 
 var Service SensorTypesService

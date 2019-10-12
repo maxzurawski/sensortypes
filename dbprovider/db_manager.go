@@ -26,6 +26,9 @@ type DBManager interface {
 	Delete(id uint) (bool, error)
 	GetAll() ([]model.SensorType, error)
 	GetDb() *gorm.DB
+
+	//cache
+	MapToCachedType(input *model.SensorType) dto.CachedTypeDTO
 }
 
 type manager struct {
