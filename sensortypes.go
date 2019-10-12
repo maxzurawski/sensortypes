@@ -16,6 +16,7 @@ func main() {
 	e.POST("/new", handlers.HandleSave)
 	e.PUT("/:id", handlers.HandleUpdate)
 	e.DELETE("/:id", handlers.HandleDelete)
+	e.GET("/cachetypes/", handlers.HandleGetCachedTypes)
 	e.Logger.Fatal(e.Start(config.Config().Address()))
 }
 
