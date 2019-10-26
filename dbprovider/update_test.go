@@ -3,10 +3,10 @@ package dbprovider
 import (
 	"testing"
 
-	"github.com/maxzurawski/sensortypes/dto"
-	"github.com/maxzurawski/utilities/db"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
+	"github.com/xdevices/sensortypes/dto"
+	"github.com/xdevices/utilities/db"
 )
 
 // struct for our suite

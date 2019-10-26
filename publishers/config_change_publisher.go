@@ -1,9 +1,9 @@
 package publishers
 
 import (
-	"github.com/maxzurawski/sensortypes/config"
-	"github.com/maxzurawski/utilities/rabbit/crosscutting"
-	"github.com/maxzurawski/utilities/rabbit/publishing"
+	"github.com/xdevices/sensortypes/config"
+	"github.com/xdevices/utilities/rabbit/crosscutting"
+	"github.com/xdevices/utilities/rabbit/publishing"
 )
 
 var configChangedPublisher *publishing.Publisher

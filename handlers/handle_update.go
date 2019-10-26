@@ -5,11 +5,11 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/maxzurawski/sensortypes/publishers"
+	"github.com/xdevices/sensortypes/publishers"
 
-	"github.com/maxzurawski/sensortypes/service"
+	"github.com/xdevices/sensortypes/service"
 
-	"github.com/maxzurawski/sensortypes/dto"
+	"github.com/xdevices/sensortypes/dto"
 
 	"github.com/labstack/echo"
 )

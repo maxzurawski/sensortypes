@@ -1,6 +1,6 @@
 package service
 
-import "github.com/maxzurawski/sensortypes/dto"
+import "github.com/xdevices/sensortypes/dto"
 
 func (s *service) GetById(id uint) (*dto.SensorTypeDTO, error) {
 	sensorType, err := s.Mgr.GetById(id)

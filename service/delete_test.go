@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/maxzurawski/sensortypes/dbprovider"
-	"github.com/maxzurawski/utilities/db"
 	"github.com/stretchr/testify/suite"
+	"github.com/xdevices/sensortypes/dbprovider"
+	"github.com/xdevices/utilities/db"
 )
 
 // suite struct

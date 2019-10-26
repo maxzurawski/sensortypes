@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/maxzurawski/sensortypes/dbprovider"
-	"github.com/maxzurawski/sensortypes/dto"
+	"github.com/xdevices/sensortypes/dbprovider"
+	"github.com/xdevices/sensortypes/dto"
 )
 
 type SensorTypesService interface {

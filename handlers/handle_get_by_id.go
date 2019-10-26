@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/maxzurawski/utilities/stringutils"
+	"github.com/xdevices/utilities/stringutils"
 
 	"github.com/labstack/echo"
-	"github.com/maxzurawski/sensortypes/service"
+	"github.com/xdevices/sensortypes/service"
 )
 
 func HandleGetById(c echo.Context) error {

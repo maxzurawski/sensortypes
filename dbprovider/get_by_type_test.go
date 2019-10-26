@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/maxzurawski/utilities/db"
 	"github.com/stretchr/testify/suite"
+	"github.com/xdevices/utilities/db"
 )
 
 // define struct for tests

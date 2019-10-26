@@ -1,6 +1,6 @@
 package service
 
-import "github.com/maxzurawski/sensortypes/dbprovider"
+import "github.com/xdevices/sensortypes/dbprovider"
 
 func ServiceEnvironmentPreparations() {
 	dbprovider.EnvironmentPreparations()

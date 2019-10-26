@@ -3,7 +3,7 @@ package dbprovider
 import (
 	"errors"
 
-	"github.com/maxzurawski/sensortypes/model"
+	"github.com/xdevices/sensortypes/model"
 )
 
 func (mgr *manager) GetById(id uint) (*model.SensorType, error) {

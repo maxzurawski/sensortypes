@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/maxzurawski/sensortypes/publishers"
+	"github.com/xdevices/sensortypes/publishers"
 
-	"github.com/maxzurawski/sensortypes/service"
+	"github.com/xdevices/sensortypes/service"
 
 	"github.com/labstack/echo"
 )

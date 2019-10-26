@@ -1,6 +1,6 @@
 package dbprovider
 
-import "github.com/maxzurawski/sensortypes/model"
+import "github.com/xdevices/sensortypes/model"
 
 func (mgr *manager) GetAll() ([]model.SensorType, error) {
 	sensorTypes := []model.SensorType{}

@@ -1,8 +1,8 @@
 package dbprovider
 
 import (
-	"github.com/maxzurawski/sensortypes/dto"
-	"github.com/maxzurawski/sensortypes/model"
+	"github.com/xdevices/sensortypes/dto"
+	"github.com/xdevices/sensortypes/model"
 )
 
 func (mgr *manager) MapToCachedType(input *model.SensorType) dto.CachedTypeDTO {

@@ -3,12 +3,12 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/maxzurawski/sensortypes/publishers"
+	"github.com/xdevices/sensortypes/publishers"
 
-	"github.com/maxzurawski/sensortypes/service"
+	"github.com/xdevices/sensortypes/service"
 
 	"github.com/labstack/echo"
-	"github.com/maxzurawski/sensortypes/dto"
+	"github.com/xdevices/sensortypes/dto"
 )
 
 func HandleSave(c echo.Context) error {
