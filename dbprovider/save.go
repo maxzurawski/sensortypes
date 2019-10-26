@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/xdevices/sensortypes/dto"
-	"github.com/xdevices/sensortypes/model"
-	"github.com/xdevices/utilities/stringutils"
+	"github.com/maxzurawski/sensortypes/dto"
+	"github.com/maxzurawski/sensortypes/model"
+	"github.com/maxzurawski/utilities/stringutils"
 )
 
 func (mgr *manager) Save(sensorTypeDTO dto.SensorTypeDTO) (*model.SensorType, error) {

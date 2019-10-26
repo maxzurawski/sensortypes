@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/xdevices/sensortypes/dto"
-	"github.com/xdevices/utilities/db"
+	"github.com/maxzurawski/sensortypes/dto"
+	"github.com/maxzurawski/utilities/db"
 
 	"github.com/stretchr/testify/suite"
 )

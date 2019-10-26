@@ -2,11 +2,11 @@ package main
 
 import (
 	"github.com/labstack/echo"
-	"github.com/xdevices/sensortypes/config"
-	"github.com/xdevices/sensortypes/dbprovider"
-	"github.com/xdevices/sensortypes/handlers"
-	"github.com/xdevices/sensortypes/publishers"
-	"github.com/xdevices/sensortypes/service"
+	"github.com/maxzurawski/sensortypes/config"
+	"github.com/maxzurawski/sensortypes/dbprovider"
+	"github.com/maxzurawski/sensortypes/handlers"
+	"github.com/maxzurawski/sensortypes/publishers"
+	"github.com/maxzurawski/sensortypes/service"
 )
 
 func main() {

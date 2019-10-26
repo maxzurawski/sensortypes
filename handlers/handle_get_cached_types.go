@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo"
-	"github.com/xdevices/sensortypes/service"
-	"github.com/xdevices/utilities/resterror"
+	"github.com/maxzurawski/sensortypes/service"
+	"github.com/maxzurawski/utilities/resterror"
 )
 
 func HandleGetCachedTypes(c echo.Context) error {

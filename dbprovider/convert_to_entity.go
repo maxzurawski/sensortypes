@@ -3,8 +3,8 @@ package dbprovider
 import (
 	"time"
 
-	"github.com/xdevices/sensortypes/dto"
-	"github.com/xdevices/sensortypes/model"
+	"github.com/maxzurawski/sensortypes/dto"
+	"github.com/maxzurawski/sensortypes/model"
 )
 
 func (mgr *manager) ConvertToEntity(input dto.SensorTypeDTO) *model.SensorType {

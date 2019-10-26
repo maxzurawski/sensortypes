@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo"
-	"github.com/xdevices/sensortypes/service"
+	"github.com/maxzurawski/sensortypes/service"
 )
 
 func HandleGetAll(c echo.Context) error {
