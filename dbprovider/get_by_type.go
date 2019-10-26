@@ -1,6 +1,6 @@
 package dbprovider
 
-import "github.com/xdevices/sensortypes/model"
+import "github.com/maxzurawski/sensortypes/model"
 
 func (mgr *manager) GetByType(input string) (*model.SensorType, error) {
 	tempSensor := &model.SensorType{}

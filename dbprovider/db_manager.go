@@ -6,10 +6,10 @@ import (
 	"github.com/labstack/gommon/log"
 
 	"github.com/jinzhu/gorm"
-	"github.com/xdevices/sensortypes/config"
-	"github.com/xdevices/sensortypes/dto"
-	"github.com/xdevices/sensortypes/model"
-	"github.com/xdevices/utilities/db"
+	"github.com/maxzurawski/sensortypes/config"
+	"github.com/maxzurawski/sensortypes/dto"
+	"github.com/maxzurawski/sensortypes/model"
+	"github.com/maxzurawski/utilities/db"
 
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
 )

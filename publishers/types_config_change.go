@@ -2,9 +2,9 @@ package publishers
 
 import (
 	"github.com/labstack/gommon/log"
-	"github.com/xdevices/sensortypes/config"
-	"github.com/xdevices/utilities/rabbit/crosscutting"
-	"github.com/xdevices/utilities/rabbit/publishing"
+	"github.com/maxzurawski/sensortypes/config"
+	"github.com/maxzurawski/utilities/rabbit/crosscutting"
+	"github.com/maxzurawski/utilities/rabbit/publishing"
 )
 
 type typesPublisher struct {
