@@ -3,9 +3,9 @@ package service
 import (
 	"testing"
 
+	"github.com/maxzurawski/sensortypes/dbprovider"
+	"github.com/maxzurawski/utilities/db"
 	"github.com/stretchr/testify/assert"
-	"github.com/xdevices/sensortypes/dbprovider"
-	"github.com/xdevices/utilities/db"
 
 	"github.com/stretchr/testify/suite"
 )

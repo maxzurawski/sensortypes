@@ -11,9 +11,9 @@ import (
 
 	"github.com/labstack/echo"
 
-	"github.com/xdevices/sensortypes/dbprovider"
-	"github.com/xdevices/sensortypes/service"
-	"github.com/xdevices/utilities/db"
+	"github.com/maxzurawski/sensortypes/dbprovider"
+	"github.com/maxzurawski/sensortypes/service"
+	"github.com/maxzurawski/utilities/db"
 
 	"github.com/stretchr/testify/suite"
 )

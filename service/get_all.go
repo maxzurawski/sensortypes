@@ -1,6 +1,6 @@
 package service
 
-import "github.com/xdevices/sensortypes/dto"
+import "github.com/maxzurawski/sensortypes/dto"
 
 func (s *service) GetAll() ([]dto.SensorTypeDTO, error) {
 	types, err := s.Mgr.GetAll()

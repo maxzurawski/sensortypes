@@ -1,6 +1,6 @@
 package service
 
-import "github.com/xdevices/sensortypes/dto"
+import "github.com/maxzurawski/sensortypes/dto"
 
 func (s *service) Update(input dto.SensorTypeDTO) (*dto.SensorTypeDTO, error) {
 	sensorType, err := s.Mgr.Update(input)
